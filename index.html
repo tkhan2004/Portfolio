@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Thanh Khang - Backend Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&family=Kanit:wght@400;600&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <nav class="nav">
+                <div class="logo">Tkhan</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">What I do</a></li>
+                    <li><a href="#projects">My Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="cursor-toggle" class="cursor-toggle" title="Toggle Custom Cursor">🖱️</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2 data-aos="fade-up" data-aos-delay="200">Hi, My name is Thanh Khang</h2>
+                <h1 data-aos="fade-up" data-aos-delay="400">JAVA <br> DEVELOPER</h1>
+                <p data-aos="fade-up" data-aos-delay="600">Intern Backend Developer focusing on Java, Spring Boot, and building scalable systems with a passion for clean, maintainable code.</p>
+                <a href="#about" class="btn-primary" data-aos="fade-up" data-aos-delay="800">Learn About me</a>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="400">
+                <div class="hero-image-bg">
+                    <img src="img/anhdaidien.jpg" alt="Thanh Khang Profile" />
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2 data-aos="zoom-in" data-aos-delay="200">Get to Know Me</h2>
+            <p data-aos="fade-up" data-aos-delay="400">I am a final-year Information Technology student at the University of Transport in Ho Chi Minh City. Seeking a Backend Internship to apply my knowledge of Java, Spring Boot, and MySQL. I am a self-motivated learner who actively explores documentation and enjoys writing clear, maintainable code.</p>
+            <a href="#contact" class="btn-contact" data-aos="fade-up" data-aos-delay="600">Contact me</a>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="skills-header">
+                <h2 data-aos="fade-up">What I do</h2>
+                <p data-aos="fade-up" data-aos-delay="200">as a backend developer</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card animate-on-scroll" data-aos="flip-left" data-aos-delay="200">
+                    <h3>Java Development</h3>
+                    <p>Core Java, OOP, Spring Boot</p>
+                </div>
+                <div class="skill-card animate-on-scroll" data-aos="flip-left" data-aos-delay="400">
+                    <h3>Backend Technologies</h3>
+                    <p>REST API, Spring Security, JWT</p>
+                </div>
+                <div class="skill-card animate-on-scroll" data-aos="flip-left" data-aos-delay="600">
+                    <h3>Database & Tools</h3>
+                    <p>MySQL, PostgreSQL, Git, Postman</p>
+                </div>
+            </div>
+            <div class="js-decoration">Java</div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="projects-header">
+                <h2 data-aos="fade-up">My Projects</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Innovative projects showcasing my skills</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://placehold.co/417x132" alt="Carpooling System" />
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Backend Development</div>
+                        <div class="project-title">ShareXe Carpooling Platform</div>
+                        <div class="project-description">A carpooling system connecting drivers and passengers. Built with Java, Spring Boot, MySQL, JPA/Hibernate. Features include RESTful APIs, authentication, and real-time chat.</div>
+                        <a href="https://github.com/khanh2004/carpooling" target="_blank" class="project-btn">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://placehold.co/421x193" alt="MailFlow Platform" />
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">AI & Backend</div>
+                        <div class="project-title">MailFlow Email System</div>
+                        <div class="project-description">A smart email platform with AI-powered draft suggestions. Developed using Java, Spring Boot, MySQL, WebSocket. Implemented secure authentication and real-time features.</div>
+                        <a href="https://github.com/khanh2004/mailflow-backend" target="_blank" class="project-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="footer">
+            <div class="footer-content" data-aos="fade-up">
+                <div class="footer-copyright">
+                    All right Reserved<br/>
+                    © Nguyen Thanh Khang
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/khanh2004" target="_blank" data-aos="fade-up" data-aos-delay="100">Github</a>
+                    <a href="https://www.linkedin.com/in/thanh-khang-nguyen2404" target="_blank" data-aos="fade-up" data-aos-delay="200">LinkedIn</a>
+                    <a href="mailto:thanhkhangdev@gmail.com" data-aos="fade-up" data-aos-delay="300">Email</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Particles.js for Background Effects -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
