@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="tech-bg"></div>
     <!-- Loading Screen -->
     <div class="loading">
         <div class="spinner"></div>
@@ -43,10 +44,18 @@
                 <p data-aos="fade-up" data-aos-delay="600">Intern Backend Developer focusing on Java, Spring Boot, and building scalable systems with a passion for clean, maintainable code.</p>
                 <a href="#about" class="btn-primary" data-aos="fade-up" data-aos-delay="800">Learn About me</a>
             </div>
-            <div class="hero-image" data-aos="fade-left" data-aos-delay="400">
-                <div class="hero-image-bg">
-                    <img src="img/anhdaidien.jpg" alt="Thanh Khang Profile" />
-                </div>
+            <!-- Thay ảnh đại diện bằng mô hình 3D -->
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="400" style="display:flex;align-items:center;justify-content:center;">
+                <model-viewer 
+                  src="img/model.glb" 
+                  alt="3D Avatar" 
+                  camera-controls 
+                  auto-rotate 
+                  autoplay 
+                  animation-name="*" 
+                  background-color="transparent" 
+                  style="width: 500px; height: 500px; margin: 0 32px; box-shadow: none; display: block;">
+                </model-viewer>
             </div>
         </section>
 
@@ -63,18 +72,27 @@
                 <h2 data-aos="fade-up">What I do</h2>
                 <p data-aos="fade-up" data-aos-delay="200">as a backend developer</p>
             </div>
-            <div class="skills-grid">
-                <div class="skill-card animate-on-scroll" data-aos="flip-left" data-aos-delay="200">
-                    <h3>Java Development</h3>
-                    <p>Core Java, OOP, Spring Boot</p>
-                </div>
-                <div class="skill-card animate-on-scroll" data-aos="flip-left" data-aos-delay="400">
-                    <h3>Backend Technologies</h3>
-                    <p>REST API, Spring Security, JWT</p>
-                </div>
-                <div class="skill-card animate-on-scroll" data-aos="flip-left" data-aos-delay="600">
-                    <h3>Database & Tools</h3>
-                    <p>MySQL, PostgreSQL, Git, Postman</p>
+            <div class="skills-grid" style="grid-template-columns: 1fr;">
+                <div class="skill-card animate-on-scroll" data-aos="flip-left" data-aos-delay="200" style="flex-wrap: wrap; flex-direction: row; justify-content: center; align-items: center;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" alt="Java" data-title="Java" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" data-title="JavaScript" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" alt="Dart" data-title="Dart" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring" data-title="Spring" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original.svg" alt="Hibernate" data-title="Hibernate" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" alt="VueJS" data-title="VueJS" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="Flutter" data-title="Flutter" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" data-title="Bootstrap" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg" alt="Swagger" data-title="Swagger" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" data-title="MySQL" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" data-title="PostgreSQL" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="Postman" data-title="Postman" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VSCode" data-title="VSCode" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" alt="IntelliJ" data-title="IntelliJ" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" data-title="GitHub" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" data-title="HTML5" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" data-title="CSS3" />
+                     </div>
+
                 </div>
             </div>
             <div class="js-decoration">Java</div>
@@ -141,6 +159,9 @@
     
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
+
+    <!-- Model Viewer for 3D Avatar -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     
     <!-- Initialize AOS -->
     <script>
