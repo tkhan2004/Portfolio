@@ -40,7 +40,7 @@
             <div class="hero-content">
                 <h2 data-aos="fade-up" data-aos-delay="200">Xin chào, mình là Thanh Khang</h2>
                 <h1 data-aos="fade-up" data-aos-delay="400">JAVA <br> DEVELOPER</h1>
-                <p data-aos="fade-up" data-aos-delay="600">Thực tập sinh Backend tập trung vào Java, Spring Boot, xây dựng hệ thống mở rộng với niềm đam mê code sạch, dễ bảo trì.</p>
+                <p data-aos="fade-up" data-aos-delay="600">Thực tập sinh Backend tập trung vào Java, Spring Boot, xây dựng hệ thống với niềm đam mê code sạch, dễ bảo trì.</p>
                 <a href="#about" class="btn-primary" data-aos="fade-up" data-aos-delay="800">Tìm hiểu về mình</a>
             </div>
             <!-- Thay ảnh đại diện bằng mô hình 3D -->
@@ -54,9 +54,9 @@
                   disable-tap 
                   auto-rotate 
                   autoplay 
-                  animation-name="*" 
+                  interaction-prompt="none" 
                   background-color="transparent" 
-                  style="width: 600px; height: 600px; margin: 0 32px; box-shadow: none; display: block;">
+                  style="width: 600px; height: 600px; margin: 0 32px; box-shadow: none; display: block; pointer-events: none;">
                 </model-viewer>
             </div>
         </section>
@@ -75,7 +75,7 @@
                 <!-- Cột 2: GPA -->
                 <div class="about-col about-col-gpa">
                     <div class="gpa-label">GPA</div>
-                    <div class="gpa-value">3.45 <span class="gpa-max">/ 4.0</span></div>
+                    <div class="gpa-value">3.4 <span class="gpa-max">/ 4.0</span></div>
                 </div>
                 <!-- Cột 3: Progress Số tín chỉ -->
                 <div class="about-col about-col-credits">
@@ -85,7 +85,7 @@
                             <div class="credits-progress-fill" style="width:76%"></div>
                         </div>
                         <div class="credits-value">
-                            <span>91</span><span class="credits-max">/120</span>
+                            <span>97</span><span class="credits-max">/120</span>
                         </div>
                     </div>
                 </div>
@@ -419,8 +419,36 @@
               background: #22304a;
             }
             @media (max-width: 700px) {
-              .gallery-content { padding: 12px 4px 8px 4px; min-width: 0; }
-              .gallery-slider img { max-width: 98vw; max-height: 50vh; }
+              .gallery-content {
+                padding: 8px 0 4px 0;
+                min-width: 0;
+                max-width: 100vw;
+              }
+              .gallery-slider {
+                flex-direction: column;
+                gap: 6px;
+                align-items: center;
+                justify-content: center;
+              }
+              .gallery-slider img {
+                max-width: 90vw;
+                max-height: 38vh;
+                margin: 0;
+                display: block;
+              }
+              .gallery-slider .gallery-prev,
+              .gallery-slider .gallery-next {
+                display: inline-flex;
+                position: static;
+                margin: 0 8px;
+                min-width: 36px;
+                min-height: 36px;
+                font-size: 28px;
+                background: rgba(24,28,36,0.7);
+                border-radius: 50%;
+                align-items: center;
+                justify-content: center;
+              }
             }
             </style>
         </section>

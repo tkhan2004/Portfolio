@@ -498,6 +498,53 @@ body {
 }
 
 @media (max-width: 900px) {
+  .header {
+    padding: 10px 0;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 6px;
+    margin-top: 2px;
+  }
+  .nav-links {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-links li {
+    margin: 0 2px;
+  }
+  .nav-links a {
+    font-size: 16px;
+    padding: 4px 0;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    padding: 6px 0;
+  }
+  .logo {
+    font-size: 18px;
+    margin-bottom: 4px;
+    margin-top: 2px;
+  }
+  .nav-links {
+    gap: 8px;
+    font-size: 13px;
+  }
+  .nav-links a {
+    font-size: 13px;
+    padding: 2px 0;
+  }
+}
+
+@media (max-width: 900px) {
   .container {
     padding: 0 8px;
   }
